@@ -8,16 +8,16 @@ in the mini-complete-example directory.
 These examples have been updated to run against Spark 1.3 so they may
 be slightly different than the versions in your copy of "Learning Spark".
 
-Requirements
-==
-* JDK 1.7 or higher
-* Scala 2.10.3
-- scala-lang.org
-* Spark 1.3
-* Protobuf compiler
-- On debian you can install with sudo apt-get install protobuf-compiler
-* R & the CRAN package Imap are required for the ChapterSixExample
-* The Python examples require urllib3
+	Requirements
+	==
+	* JDK 1.7 or higher
+	* Scala 2.10.3
+	- scala-lang.org
+	* Spark 1.3
+	* Protobuf compiler
+	- On debian you can install with sudo apt-get install protobuf-compiler
+	* R & the CRAN package Imap are required for the ChapterSixExample
+	* The Python examples require urllib3
 
 Python examples
 ===
@@ -34,3 +34,12 @@ versions of the code and run the job with the spark-submit script
 cd $SPARK_HOME; ./bin/spark-submit   --class com.oreilly.learningsparkexamples.[lang].[example] ../learning-spark-examples/target/scala-2.10/learning-spark-examples-assembly-0.0.1.jar
 
 [![Learning Spark](http://akamaicovers.oreilly.com/images/0636920028512/cat.gif)](http://www.jdoqocy.com/click-7645222-11260198?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920028512.do%3Fcmp%3Daf-strata-books-videos-product_cj_9781449358600_%2525zp&cjsku=0636920028512)
+
+	UPDATE 2016/22/4 Alonso
+
+	Updated build.sbt to work with latest versions. jetty and cassandra still remains with the same version. 
+	Actual versions doesnt compile...
+
+	Now you can use sbt-pack to generate the unix commands of each example, so, you have to run sbt clean pack 
+	to generate those commands. After that you can run the commands located within target/pack/bin folder.
+
