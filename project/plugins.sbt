@@ -7,3 +7,7 @@ resolvers += "Spray Repository" at "http://repo.spray.cc/"
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.10.2")
 
 addSbtPlugin("com.github.gseitz" % "sbt-protobuf" % "0.3.3")
+
+addSbtPlugin("org.xerial.sbt" % "sbt-pack" % "0.7.9")
+
+addSbtPlugin("org.ensime" % "ensime-sbt" % "0.4.0")
